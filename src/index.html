@@ -3,31 +3,37 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/main.css">
   <title>My spotify App</title>
   <h1>Welcom to Melody Muster </h1>
   <img src="images/image1.jpg" alt="Dance and musice">
   
+ 
+  
 </head>
 
 <body>
-  <h1>Display profile</h1>
-  <section id="profile">
-    <h2>Logged in as<span id="displayName"></span></h2>
-    <span id="avatar"></span>
-    <ul>
-      <li>User ID: <span id="id"></span></li>
-      <li>Email: <span id="email"></span></li>
-      <li>Spotify URI: <a id="uri" href="#"></a></li>
-      <li>Link: <a id="url" href="#"></a></li>
-      <li>Profile Image: <span id="imgUrl"></span></li>
+  <div class="container">
 
-    </ul>
-  </section>
-  <p id="sometext"></p>
-  <script type="module" src="/main.js"></script>
+    <div id="tokenSection" class="row">
+      <div class="col">
+        <div class="mb-3">
+          <label for="clientId" class="from-label">clientId</label>
+          <input type="text" class="from-control" id="clientId" placeholder="">
+
+        </div>
+        <div class="mb-3"></div>
+        <label for="clientSecret" class="form-label">clientSecret</label>
+        <input type="text" class="form-control" id="clientSecret" placeholder="">
+      </div>
+      <input class="btn btn-primary btn-lg" type="button" onclick="requestAuthorization()" value="RequestAuthorization">
+    
+    </div>
+  </div>
+</div>
+  
+ 
 </body>
+<script type="module" src="/main.js"></script>
 
 </html>
