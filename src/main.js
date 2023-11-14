@@ -8,7 +8,7 @@ function onPageLoad(){
 }
 
 
-function requestAthorization(){
+function requestAuthorization(){
   client_id = document.getElementById("clientId").value;
   client_secret =  document.getElementById("clientSecret").value;
   
